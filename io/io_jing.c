@@ -481,11 +481,11 @@ void ljing_read_vel(FILE *vel,struct particle *p,int64_t num_p){
 				fread(&joint.c[1],1,1,vel);
 				fread(&joint.c[2],1,1,vel);
 				SKIP(vel);
-	fprintf(stderr,"VELSKIP=%d\n",dummy);
 				SKIP(vel);
 				fread(&joint.c[3],1,1,vel);
+				if (i<5) i++;
+				else i=3, j++;
 				p[num_p+j].pos[5]=joint.f*LJING_VSCALE;
-				i++;
 				nb+=4;
 			}
 			else if(nb==NF*2-2)
@@ -494,12 +494,12 @@ void ljing_read_vel(FILE *vel,struct particle *p,int64_t num_p){
 				fread(&joint.c[0],1,1,vel);
 				fread(&joint.c[1],1,1,vel);
 				SKIP(vel);
-	fprintf(stderr,"SKIP=%d\n",dummy);
 				SKIP(vel);
 				fread(&joint.c[2],1,1,vel);
 				fread(&joint.c[3],1,1,vel);
+				if (i<5) i++;
+				else i=3, j++;
 				p[num_p+j].pos[5]=joint.f*LJING_VSCALE;
-				i++;
 				nb+=4;
 			}
 			else if(nb==NF*3-1)
@@ -507,19 +507,18 @@ void ljing_read_vel(FILE *vel,struct particle *p,int64_t num_p){
 				float_char joint;
 				fread(&joint.c[0],1,1,vel);
 				SKIP(vel);
-	fprintf(stderr,"SKIP=%d\n",dummy);
 				SKIP(vel);
 				fread(&joint.c[1],1,1,vel);
 				fread(&joint.c[2],1,1,vel);
 				fread(&joint.c[3],1,1,vel);
+				if (i<5) i++;
+				else i=3, j++;
 				p[num_p+j].pos[5]=joint.f*LJING_VSCALE;
-				i++;
 				nb+=4;
 			}
 			else if(nb==NF*4)
 			{
 				SKIP(vel);
-	fprintf(stderr,"SKIP=%d\n",dummy);
 				SKIP(vel);
 				nb=0;
 			}
