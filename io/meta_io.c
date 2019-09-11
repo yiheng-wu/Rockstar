@@ -20,6 +20,7 @@
 #include "io_internal.h"
 #include "io_tipsy.h"
 #include "io_jing.h"
+#include "io_tng.h"
 #include "meta_io.h"
 #include "../distance.h"
 #include "../version.h"
@@ -73,7 +74,8 @@ void get_input_filename(char *buffer, int maxlen, int64_t snap, int64_t block) {
 	      !strncasecmp(FILE_FORMAT, "LGADGET", 7) ||
 	      !strncasecmp(FILE_FORMAT, "AREPO", 5)||
 		  !strncasecmp(FILE_FORMAT, "JING",4)||
-		  !strncasecmp(FILE_FORMAT, "LJING",5))
+		  !strncasecmp(FILE_FORMAT, "LJING",5)||
+		  !strncasecmp(FILE_FORMAT, "HDF5",4))
 	    snprintf(buffer+out, maxlen-out, "%03"PRId64, snap);
 	  else snprintf(buffer+out, maxlen-out, "%"PRId64, snap);
 	}
@@ -120,9 +122,19 @@ void read_particles(char *filename) {
   else if (!strncasecmp(FILE_FORMAT, "JING", 4)){
 	load_particles_jing(filename, &p, &num_p);//JING
   }
-  else if (!strncasecmp(FILE_FORMAT, "LJING", 4)){
+  else if (!strncasecmp(FILE_FORMAT, "LJING", 5)){
 	load_particles_ljing(filename, &p, &num_p);//LJING
   }
+/*
+  else if (!strncasecmp(FILE_FORMAT, "TNG",3)){
+#ifdef ENABLE_HDF5
+	load_particles_tng(filename, &p, &num_p);//Illustris TNG
+#else
+    fprintf(stderr, "[Error] TNG needs HDF5 support.  Recompile Rockstar using \"make with_hdf5\".\n");
+    exit(1);
+#endif
+  }
+*/
   else if (!strncasecmp(FILE_FORMAT, "GENERIC", 7)) {
     assert(load_particles_generic != NULL);
     load_particles_generic(filename, &p, &num_p);

@@ -23,10 +23,13 @@
 #define AREPO_NTYPES 6
 
 void arepo_read_dataset(hid_t HDF_FileID, char *filename, char *gid, char *dataid, struct particle *p, int64_t to_read, int64_t offset, int64_t stride, hid_t type) {
-  int64_t width = (type == H5T_NATIVE_LLONG) ? 8 : 4;
+  int64_t width;
+  if(type == H5T_NATIVE_LLONG || type==H5T_NATIVE_DOUBLE) width=8;
+  if(type == H5T_NATIVE_FLOAT) width=4;
   void *buffer = check_malloc_s(buffer, to_read, width*stride);
   int64_t *ibuffer = buffer;
   float *fbuffer = buffer;
+  double *dbuffer = buffer;
 
   hid_t HDF_GroupID = check_H5Gopen(HDF_FileID, gid, filename);
   hid_t HDF_DatasetID = check_H5Dopen(HDF_GroupID, dataid, gid, filename);
@@ -47,12 +50,20 @@ void arepo_read_dataset(hid_t HDF_FileID, char *filename, char *gid, char *datai
   H5Dclose(HDF_DatasetID);
   H5Gclose(HDF_GroupID);
 
-  if (width == 8)
+  if (type == H5T_NATIVE_LLONG)
     for (int64_t i=0; i<to_read; i++)
       p[i].id = ibuffer[i];
-  else
+  else if(type == H5T_NATIVE_FLOAT)
     for (int64_t i=0; i<to_read; i++)
       memcpy(((char *)&(p[i]))+offset, fbuffer+(i*stride), stride*width);
+  else if(type == H5T_NATIVE_DOUBLE)
+  {
+    for (int64_t i=0; i<to_read; i++)
+    {
+      for(int j=0; j<3; j++)
+        p[i].pos[j]=dbuffer[i*3+j];
+    }
+  }
 
   free(buffer);
 }
@@ -104,6 +115,57 @@ void arepo_rescale_particles(struct particle *p, int64_t p_start, int64_t nelems
       p[p_start+i].pos[j+3] *= vel_rescale;
     }
   }
+}
+void position(struct particle *p,int np,int64_t num_p,char *filename)
+{
+  char position[200];
+  sprintf(position,"%s_position",filename);
+  FILE *fp=check_fopen(position,"w");
+  int i;
+  for(i=0;i<np;i++)
+  {
+    fprintf(fp,"%f %f %f\n",p[num_p+i].pos[0],p[num_p+i].pos[1],p[num_p+i].pos[2]);
+  }
+  fclose(fp);
+/*
+	int pro_data[1200][1200];
+	int i,j;
+	for(i=0;i<1200;i++)
+	{
+		for(j=0;j<1200;j++)
+		{
+			pro_data[i][j]=0;
+		}
+	}
+	for(i=0;i<np;i++)
+	{
+		if (i%1000==0)
+		{
+			fprintf(stderr,"x=%f\n",p[num_p+i].pos[0]);
+			fprintf(stderr,"y=%f\n",p[num_p+i].pos[1]);
+			fprintf(stderr,"z=%f\n",p[num_p+i].pos[2]);
+		}
+		if (p[num_p+i].pos[0]>500 && p[num_p+i].pos[0]<500.5)
+		{
+			pro_data[(int)(p[num_p+i].pos[1])][(int)(p[num_p+i].pos[2])]+=1;
+			//fprintf(stderr,"%"PRId64"\n",p[i].id);
+		}
+	}
+	
+
+	FILE *new=fopen("profile.txt","a");
+	int64_t All=0;
+	for(i=0;i<1200;i++)
+	{
+		for(j=0;j<1200;j++)
+		{
+			All+=pro_data[i][j];
+			fprintf(new,"%d\n",pro_data[i][j]);
+		}
+	}
+	fclose(new);
+	printf("ALL=%"PRId64"\n",All);
+*/
 }
 
 void load_particles_arepo(char *filename, struct particle **p, int64_t *num_p)
@@ -162,13 +224,17 @@ void load_particles_arepo(char *filename, struct particle **p, int64_t *num_p)
   arepo_read_dataset(HDF_FileID, filename, buffer, "ParticleIDs", *p + (*num_p),
 	 to_read, (char *)&(p[0][0].id)-(char*)(p[0]), 1, H5T_NATIVE_LLONG);
   arepo_read_dataset(HDF_FileID, filename, buffer, "Coordinates", *p + (*num_p),
-	 to_read, (char *)&(p[0][0].pos[0])-(char*)(p[0]), 3, H5T_NATIVE_FLOAT);
+	 to_read, (char *)&(p[0][0].pos[0])-(char*)(p[0]), 3, H5T_NATIVE_DOUBLE);
   arepo_read_dataset(HDF_FileID, filename, buffer, "Velocities", *p + (*num_p),
 	 to_read, (char *)&(p[0][0].pos[3])-(char*)(p[0]), 3, H5T_NATIVE_FLOAT);
 
   H5Fclose(HDF_FileID);
   
   arepo_rescale_particles(*p, *num_p, to_read);
+
+
+  position(*p,npart[AREPO_DM_PARTTYPE],*num_p,filename);
+
   
   *num_p += npart[AREPO_DM_PARTTYPE];
 }

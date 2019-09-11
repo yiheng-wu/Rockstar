@@ -1,0 +1,591 @@
+[     0s] Accepting connections...
+[    24s] Accepted all reader / writer connections.
+[    24s] Verified all reader / writer connections.
+[    24s] Transmitted all client connection info.
+[    24s] Reading 64 blocks for snapshot 99...
+[  1328s] Sending projection requests...
+[  1451s] Transferring particles to writers...
+[  1549s] Analyzing for FoF groups...
+[  1886s] Transferring boundary particles between writers...
+[  1896s] Linking boundary particles...
+[  1904s] Analyzing for halos / subhalos...
+[  6618s] Loading merger tree information...
+[  6633s] Constructing merger tree...
+[  6643s] [Success] Done with snapshot 99.
+[  6643s] [Finished]
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.11.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93974250
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.56.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94112448
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.63.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94062469
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.31.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93821773
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.48.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94896095
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.3.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94015230
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.19.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94429058
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.45.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94651271
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.0.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94082254
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.13.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94479743
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.34.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94253681
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.18.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94035442
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.28.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94168830
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.25.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94144667
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.59.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94416436
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.39.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94196487
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.29.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94060527
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.50.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94622084
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.20.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93928979
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.38.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93949549
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.57.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94647825
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.41.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94243475
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.12.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94152614
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.23.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94032616
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.33.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94120680
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.30.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93964049
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.58.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93807644
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.54.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94192262
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.1.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93716342
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.26.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94268476
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.60.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94843907
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.35.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94391070
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.55.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94238802
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.10.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94125533
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.40.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94089610
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.2.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94168133
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.9.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94434733
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.52.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94181796
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.6.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94467000
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.62.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94148871
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.4.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93802639
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.21.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94244066
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.61.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93726053
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.27.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94481730
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.53.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94219272
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.49.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94205856
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.42.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94282488
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.24.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93809796
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.5.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94091358
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.7.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93840105
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.36.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94903597
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.46.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94460845
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.14.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94099645
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.16.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94093496
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.51.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94390029
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.15.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94319916
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.47.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93981043
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.17.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93987608
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.37.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94599589
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.8.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93995753
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.32.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93660669
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.22.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94715385
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.43.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 93935143
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+
+AREPO: filename:       /data/s5/yhwu/data/TNG/snap/snap_099.44.hdf5
+AREPO: box size:       75 Mpc/h
+AREPO: h0:             0.6774
+AREPO: scale factor:   1
+AREPO: Total DM Part:  6028568000
+AREPO: ThisFile DM Part: 94185208
+AREPO: DM Part Mass:   5.99969e+06 Msun/h
+AREPO: avgPartSpacing: 0.0412103 Mpc/h
+

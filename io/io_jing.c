@@ -7,6 +7,7 @@
 #include "io_jing.h"
 #include "io_util.h"
 #include "unistd.h"
+#include "inttypes.h"
 #include "../universal_constants.h"
 #include "../check_syscalls.h"
 #include "../config_vars.h"
@@ -327,7 +328,7 @@ void load_particles_jing(char *filename, struct particle **p, int64_t *num_p)
 	fclose(vel);
 
 	*num_p+=header.np;
-//	fprintf(stderr,"num_p=%lld\n",*num_p);
+//	fprintf(stderr,"num_p=%"PRId64"\n",*num_p);
 }
 
 /***********************************LLLLJING**********************************/
@@ -362,7 +363,7 @@ struct ljing_header ljing_extract_header_info(FILE *pos,char *head_info){
 
 
 	fprintf(h_info,"%f\n",BOX_SIZE);
-	fprintf(h_info,"%lld\n",TOTAL_PARTICLES);
+	fprintf(h_info,"%"PRId64"\n",TOTAL_PARTICLES);
 	fprintf(h_info,"%f\n",SCALE_NOW);
 	fprintf(h_info,"%f\n",PARTICLE_MASS);
 	fprintf(h_info,"%f\n",AVG_PARTICLE_SPACING);
@@ -378,7 +379,7 @@ struct ljing_header ljing_extract_header_info(FILE *pos,char *head_info){
 void ljing_read_head(char * head_info){
 	FILE *h_info=check_fopen(head_info,"r");
 	fscanf(h_info,"%lf\n",&BOX_SIZE);
-	fscanf(h_info,"%lld\n",&TOTAL_PARTICLES);
+	fscanf(h_info,"%"PRId64"\n",&TOTAL_PARTICLES);
 	fscanf(h_info,"%lf\n",&SCALE_NOW);
 	fscanf(h_info,"%lf\n",&PARTICLE_MASS);
 	fscanf(h_info,"%lf\n",&AVG_PARTICLE_SPACING);
@@ -465,7 +466,7 @@ void ljing_read_vel(FILE *vel,struct particle *p,int64_t num_p){
 		SKIP(vel);
 	}
 
-	fprintf(stderr,"Total particles=%lld\n",TOTAL_PARTICLES);
+	fprintf(stderr,"Total particles=%"PRId64"\n",TOTAL_PARTICLES);
 	for(j=0;j<TOTAL_PARTICLES/NUM_BLOCKS;j++)
 	{
 		for(i=3;i<6;i++)
@@ -548,13 +549,13 @@ void profile(struct particle *p,int np,int64_t num_p)
 		if (p[num_p+i].pos[0]>500 && p[num_p+i].pos[0]<500.5)
 		{
 			pro_data[(int)(p[num_p+i].pos[1])][(int)(p[num_p+i].pos[2])]+=1;
-			//fprintf(stderr,"%lld\n",p[i].id);
+			//fprintf(stderr,"%"PRId64"\n",p[i].id);
 		}
 	}
 	
 
 	FILE *new=fopen("profile.txt","a");
-	long long All=0;
+	int64_t All=0;
 	for(i=0;i<1200;i++)
 	{
 		for(j=0;j<1200;j++)
@@ -564,7 +565,7 @@ void profile(struct particle *p,int np,int64_t num_p)
 		}
 	}
 	fclose(new);
-	printf("ALL=%lld\n",All);
+	printf("ALL=%"PRId64"\n",All);
 }
 void load_particles_ljing(char *filename, struct particle **p, int64_t *num_p)
 {
@@ -624,7 +625,7 @@ void load_particles_ljing(char *filename, struct particle **p, int64_t *num_p)
 
 	if(!IGNORE_PARTICLE_IDS) ljing_read_id(id,*p,*num_p);
 	ljing_read_pos(pos,*p,*num_p);
-	profile(*p,TOTAL_PARTICLES/NUM_BLOCKS,*num_p);
+//	profile(*p,TOTAL_PARTICLES/NUM_BLOCKS,*num_p);
 	ljing_read_vel(vel,*p,*num_p);
 
 

@@ -3,8 +3,9 @@
 #ifdef ENABLE_HDF5
 #include <hdf5.h> /* HDF5 required */
 #include <inttypes.h>
+#include "../particle.h"
 
-hid_t check_H5Fopen(char *filename, unsigned flags);
+hid_t check_H5Fopen(char *filename,unsigned flags);
 
 hid_t check_H5Gopen(hid_t HDF_FileID, char *gid, char *filename);
 

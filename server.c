@@ -371,9 +371,7 @@ void find_halos(int64_t snap) {
 
     timed_output("Analyzing for halos / subhalos...\n");
     command_writers("rock");
-	timed_output("before load balance\n");
     load_balance();
-	timed_output("after load balance\n");
     if (server_error_state) return;
 
     if (check_bgc2_snap(snap) || STRICT_SO_MASSES) {
